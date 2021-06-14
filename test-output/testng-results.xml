@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="17" passed="12" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-14T16:02:07 IST" name="Command line suite" finished-at="2021-06-14T16:02:08 IST" duration-ms="45">
+    <groups>
+      <group name="Negative">
+        <method signature="Calculator_Tests.CosThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="CosThetaTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.CotThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="CotThetaTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.NegativeMultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="NegativeMultiplicationTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.NegativePowerTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="NegativePowerTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.TanThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="TanThetaTest" class="org.example.Calculator_Tests"/>
+      </group> <!-- Negative -->
+      <group name="Positive">
+        <method signature="Calculator_Tests.AdditionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="AdditionTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.DivideByZero()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="DivideByZero" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.DivideTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="DivideTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.IsPositiveIsNegativeTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="IsPositiveIsNegativeTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.MultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="MultiplicationTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.PowerFunctionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="PowerFunctionTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.SinThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="SinThetaTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.SubtractionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="SubtractionTest" class="org.example.Calculator_Tests"/>
+      </group> <!-- Positive -->
+      <group name="Arithmetic">
+        <method signature="Calculator_Tests.AdditionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="AdditionTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.DivideByZero()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="DivideByZero" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.DivideTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="DivideTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.MultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="MultiplicationTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.NegativeMultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="NegativeMultiplicationTest" class="org.example.Calculator_Tests"/>
+        <method signature="Calculator_Tests.SubtractionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" name="SubtractionTest" class="org.example.Calculator_Tests"/>
+      </group> <!-- Arithmetic -->
+    </groups>
+    <test started-at="2021-06-14T16:02:07 IST" name="Command line test" finished-at="2021-06-14T16:02:08 IST" duration-ms="45">
+      <class name="org.example.Calculator_Tests">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:07 IST" name="Setup" finished-at="2021-06-14T16:02:08 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="AdditionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="AdditionTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AdditionTest -->
+        <test-method signature="CosThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="CosThetaTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="1" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.9092974268256817] but found [-0.4161468365471424]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.9092974268256817] but found [-0.4161468365471424]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at org.example.Calculator_Tests.CosThetaTest(Calculator_Tests.java:77)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CosThetaTest -->
+        <test-method signature="CotThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="CotThetaTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [0.9640275800758169] but found [-0.45765755436028577]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [0.9640275800758169] but found [-0.45765755436028577]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at org.example.Calculator_Tests.CotThetaTest(Calculator_Tests.java:87)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CotThetaTest -->
+        <test-method signature="DatProviderAdditionTest(int, int, int)[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DatProviderAdditionTest" data-provider="EndPoints" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatProviderAdditionTest -->
+        <test-method signature="DatProviderAdditionTest(int, int, int)[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DatProviderAdditionTest" data-provider="EndPoints" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[3]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatProviderAdditionTest -->
+        <test-method signature="DatProviderAdditionTest(int, int, int)[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DatProviderAdditionTest" data-provider="EndPoints" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[9]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[7]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatProviderAdditionTest -->
+        <test-method signature="DatProviderAdditionTest(int, int, int)[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DatProviderAdditionTest" data-provider="EndPoints" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DatProviderAdditionTest -->
+        <test-method signature="DivideByZero()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DivideByZero" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[Attempt to divide by zero]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: Attempt to divide by zero
+at com.epam.tat.module4.Calculator.div(Calculator.java:34)
+at org.example.Calculator_Tests.DivideByZero(Calculator_Tests.java:47)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DivideByZero -->
+        <test-method signature="IsPositiveIsNegativeTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="IsPositiveIsNegativeTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- IsPositiveIsNegativeTest -->
+        <test-method signature="NegativeMultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="NegativeMultiplicationTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [13.0] but found [13.2]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [13.0] but found [13.2]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at org.example.Calculator_Tests.NegativeMultiplicationTest(Calculator_Tests.java:92)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeMultiplicationTest -->
+        <test-method signature="DivideTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="DivideTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DivideTest -->
+        <test-method signature="MultiplicationTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="MultiplicationTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MultiplicationTest -->
+        <test-method signature="SinThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="SinThetaTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SinThetaTest -->
+        <test-method signature="PowerFunctionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="PowerFunctionTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PowerFunctionTest -->
+        <test-method signature="SubtractionTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="SubtractionTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SubtractionTest -->
+        <test-method signature="NegativePowerTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="NegativePowerTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [-0.008] but found [NaN]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [-0.008] but found [NaN]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at org.example.Calculator_Tests.NegativePowerTest(Calculator_Tests.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativePowerTest -->
+        <test-method signature="TanThetaTest()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="TanThetaTest" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [1.0] but found [-2.185039863261519]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [1.0] but found [-2.185039863261519]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertEquals(Assert.java:640)
+at org.testng.Assert.assertEquals(Assert.java:651)
+at org.example.Calculator_Tests.TanThetaTest(Calculator_Tests.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TanThetaTest -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:org.example.Calculator_Tests@52aa2946]" started-at="2021-06-14T16:02:08 IST" name="TearDown" finished-at="2021-06-14T16:02:08 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- org.example.Calculator_Tests -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

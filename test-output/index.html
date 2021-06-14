@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Command_line_suite" class="navigator-link">
+              <span class="suite-name border-failed">Command line suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Command_line_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Command_line_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Command_line_suite" class="navigator-link ">
+                    <span>3 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Command_line_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Command_line_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Command_line_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Command_line_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">17 methods, 5 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods failed suite-Command_line_suite"> (hide)</a> <!-- hide-methods failed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods failed suite-Command_line_suite"> (show)</a> <!-- show-methods failed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Command_line_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="CosThetaTest">CosThetaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="CotThetaTest">CotThetaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="NegativeMultiplicationTest">NegativeMultiplicationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="NegativePowerTest">NegativePowerTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="TanThetaTest">TanThetaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Command_line_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Command_line_suite" class="hide-methods passed suite-Command_line_suite"> (hide)</a> <!-- hide-methods passed suite-Command_line_suite -->
+                      <a href="#" panel-name="suite-Command_line_suite" class="show-methods passed suite-Command_line_suite"> (show)</a> <!-- show-methods passed suite-Command_line_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Command_line_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="AdditionTest">AdditionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DatProviderAdditionTest(1, 3, 4)">DatProviderAdditionTest(1, 3, 4)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DatProviderAdditionTest(9, 7, 16)">DatProviderAdditionTest(9, 7, 16)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DatProviderAdditionTest(1, 0, 1)">DatProviderAdditionTest(1, 0, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DatProviderAdditionTest(5, 4, 9)">DatProviderAdditionTest(5, 4, 9)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DivideByZero">DivideByZero</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="DivideTest">DivideTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="IsPositiveIsNegativeTest">IsPositiveIsNegativeTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="MultiplicationTest">MultiplicationTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="PowerFunctionTest">PowerFunctionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="SinThetaTest">SinThetaTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Command_line_suite" title="org.example.Calculator_Tests" class="method navigator-link" hash-for-method="SubtractionTest">SubtractionTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Command_line_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Command_line_suite" class="panel Command_line_suite">
+          <div class="suite-Command_line_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.example.Calculator_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CosThetaTest">
+                  </a> <!-- CosThetaTest -->
+                  <span class="method-name">CosThetaTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.9092974268256817] but found [-0.4161468365471424]
+	at org.example.Calculator_Tests.CosThetaTest(Calculator_Tests.java:77)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="CotThetaTest">
+                  </a> <!-- CotThetaTest -->
+                  <span class="method-name">CotThetaTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [0.9640275800758169] but found [-0.45765755436028577]
+	at org.example.Calculator_Tests.CotThetaTest(Calculator_Tests.java:87)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NegativeMultiplicationTest">
+                  </a> <!-- NegativeMultiplicationTest -->
+                  <span class="method-name">NegativeMultiplicationTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [13.0] but found [13.2]
+	at org.example.Calculator_Tests.NegativeMultiplicationTest(Calculator_Tests.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NegativePowerTest">
+                  </a> <!-- NegativePowerTest -->
+                  <span class="method-name">NegativePowerTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [-0.008] but found [NaN]
+	at org.example.Calculator_Tests.NegativePowerTest(Calculator_Tests.java:97)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TanThetaTest">
+                  </a> <!-- TanThetaTest -->
+                  <span class="method-name">TanThetaTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [1.0] but found [-2.185039863261519]
+	at org.example.Calculator_Tests.TanThetaTest(Calculator_Tests.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at org.example.RunTestWithListener.main(RunTestWithListener.java:11)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-failed -->
+          <div class="suite-Command_line_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.example.Calculator_Tests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AdditionTest">
+                  </a> <!-- AdditionTest -->
+                  <span class="method-name">AdditionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DatProviderAdditionTest(1, 3, 4)">
+                  </a> <!-- DatProviderAdditionTest(1, 3, 4) -->
+                  <span class="method-name">DatProviderAdditionTest</span>
+                  <span class="parameters">(1, 3, 4)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DatProviderAdditionTest(9, 7, 16)">
+                  </a> <!-- DatProviderAdditionTest(9, 7, 16) -->
+                  <span class="method-name">DatProviderAdditionTest</span>
+                  <span class="parameters">(9, 7, 16)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DatProviderAdditionTest(1, 0, 1)">
+                  </a> <!-- DatProviderAdditionTest(1, 0, 1) -->
+                  <span class="method-name">DatProviderAdditionTest</span>
+                  <span class="parameters">(1, 0, 1)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DatProviderAdditionTest(5, 4, 9)">
+                  </a> <!-- DatProviderAdditionTest(5, 4, 9) -->
+                  <span class="method-name">DatProviderAdditionTest</span>
+                  <span class="parameters">(5, 4, 9)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DivideByZero">
+                  </a> <!-- DivideByZero -->
+                  <span class="method-name">DivideByZero</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DivideTest">
+                  </a> <!-- DivideTest -->
+                  <span class="method-name">DivideTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="IsPositiveIsNegativeTest">
+                  </a> <!-- IsPositiveIsNegativeTest -->
+                  <span class="method-name">IsPositiveIsNegativeTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MultiplicationTest">
+                  </a> <!-- MultiplicationTest -->
+                  <span class="method-name">MultiplicationTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PowerFunctionTest">
+                  </a> <!-- PowerFunctionTest -->
+                  <span class="method-name">PowerFunctionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SinThetaTest">
+                  </a> <!-- SinThetaTest -->
+                  <span class="method-name">SinThetaTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SubtractionTest">
+                  </a> <!-- SubtractionTest -->
+                  <span class="method-name">SubtractionTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Command_line_suite-class-passed -->
+        </div> <!-- panel Command_line_suite -->
+        <div panel-name="test-xml-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Command line suite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Command line test&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.example.Calculator_Tests&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Command line test --&gt;
+&lt;/suite&gt; &lt;!-- Command line suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Command line test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Arithmetic</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AdditionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DivideByZero</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DivideTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">MultiplicationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NegativeMultiplicationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SubtractionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Negative</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">CosThetaTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">CotThetaTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NegativeMultiplicationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">NegativePowerTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">TanThetaTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Positive</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AdditionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DivideByZero</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">DivideTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">IsPositiveIsNegativeTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">MultiplicationTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">PowerFunctionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SinThetaTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">SubtractionTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Command_line_suite');
+function tableData_Command_line_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(17);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'AdditionTest')
+data.setCell(0, 2, 'org.example.Calculator_Tests')
+data.setCell(0, 3, 3);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'CosThetaTest')
+data.setCell(1, 2, 'org.example.Calculator_Tests')
+data.setCell(1, 3, 1);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'IsPositiveIsNegativeTest')
+data.setCell(2, 2, 'org.example.Calculator_Tests')
+data.setCell(2, 3, 0);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'DatProviderAdditionTest')
+data.setCell(3, 2, 'org.example.Calculator_Tests')
+data.setCell(3, 3, 0);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'DatProviderAdditionTest')
+data.setCell(4, 2, 'org.example.Calculator_Tests')
+data.setCell(4, 3, 0);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'DivideTest')
+data.setCell(5, 2, 'org.example.Calculator_Tests')
+data.setCell(5, 3, 0);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'MultiplicationTest')
+data.setCell(6, 2, 'org.example.Calculator_Tests')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'DatProviderAdditionTest')
+data.setCell(7, 2, 'org.example.Calculator_Tests')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'SinThetaTest')
+data.setCell(8, 2, 'org.example.Calculator_Tests')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'PowerFunctionTest')
+data.setCell(9, 2, 'org.example.Calculator_Tests')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'SubtractionTest')
+data.setCell(10, 2, 'org.example.Calculator_Tests')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'DivideByZero')
+data.setCell(11, 2, 'org.example.Calculator_Tests')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'DatProviderAdditionTest')
+data.setCell(12, 2, 'org.example.Calculator_Tests')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'NegativeMultiplicationTest')
+data.setCell(13, 2, 'org.example.Calculator_Tests')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'CotThetaTest')
+data.setCell(14, 2, 'org.example.Calculator_Tests')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'TanThetaTest')
+data.setCell(15, 2, 'org.example.Calculator_Tests')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'NegativePowerTest')
+data.setCell(16, 2, 'org.example.Calculator_Tests')
+data.setCell(16, 3, 0);
+window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 4 ms</span>
+              <div id="times-div-Command_line_suite">
+              </div> <!-- times-div-Command_line_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Command line suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Command_line_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.example.Calculator_Tests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">Setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">AdditionTest</span>
+                <span class="method-start">19 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CosThetaTest</span>
+                <span class="method-start">24 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">CotThetaTest</span>
+                <span class="method-start">26 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DatProviderAdditionTest(5, 4, 9)</span>
+                <span class="method-start">29 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DatProviderAdditionTest(1, 3, 4)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DatProviderAdditionTest(9, 7, 16)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DatProviderAdditionTest(1, 0, 1)</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DivideByZero</span>
+                <span class="method-start">30 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DivideTest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">IsPositiveIsNegativeTest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">MultiplicationTest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NegativeMultiplicationTest</span>
+                <span class="method-start">31 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">NegativePowerTest</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PowerFunctionTest</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SinThetaTest</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">SubtractionTest</span>
+                <span class="method-start">32 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TanThetaTest</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">TearDown</span>
+                <span class="method-start">33 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
